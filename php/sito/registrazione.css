@@ -1,0 +1,174 @@
+body{
+	margin: 0px;
+	background-image: url(immagini/sfondo_login_registrazione.jpg);
+	background-size: 100%;
+}
+
+
+
+header{
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height:55px;
+}
+
+.logo{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+}
+
+nav div a.link{
+	padding: 10px 15px;
+	border: 2px solid white;
+	border-radius: 100px;
+	color: white;
+	margin: 0px 10px;
+	text-decoration: none;
+}
+
+#links{
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+nav div a.link:hover{
+	color: silver;
+	border-color: silver;
+}
+
+#menu{
+	display: none;
+	margin-top: 15px;
+    margin-right: 20px;
+}
+
+#menu div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px 0;
+}
+
+
+
+section{
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#contenitore{
+	margin:50px auto;
+	display:flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 20px;
+	background: white;
+	align-items: center;
+	height: 540px;
+}
+
+.errore{
+	color: red;
+}
+
+main{
+}
+
+form{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+}
+
+label{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 0px;
+}
+
+input{
+	height: 25px;
+}
+
+#invio{
+	border-radius: 20px;
+	font-size: 30px;
+	margin: 35px 0;
+	height: 50px;
+}
+
+.hidden{
+	display: none;
+}
+
+#menu.hidden{
+	display: none;
+}
+
+@media (max-width: 550px) {
+	body {
+		font-size: 14px;
+	}
+	
+	header{
+		text-align: center;
+	}
+	
+	#links{
+		display: none;
+	}
+	
+	#menu{
+		display: block;
+	}
+	
+	#open-menu{
+		background-color: rgba(0, 0, 0, 0.3);
+		width: 130px;
+		position: absolute;
+		z-index: 2;
+		top: 0px;
+		right: 0px;
+		display:flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	
+	a.link{
+		font-size: 25px;
+		color:white;
+		text-decoration: none;
+	}
+	
+	#contenitore{
+		width: 360px;
+		padding: 0px;
+		margin-bottom: 0px;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	footer{
+		flex-direction: column;
+		height:200px;
+	}
+}
