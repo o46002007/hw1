@@ -133,7 +133,7 @@ function onJSONAmadeusData(json){
 	h5.textContent="Hotel vicini alla città: "+json[0];
 	div.appendChild(h5);
 
-	const n=json[1].data.length;
+	let n=json[1].data.length;
 	
 	if(n==0){
 		const h6=document.createElement("h6");
